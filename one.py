@@ -37,16 +37,17 @@ while True:
 
     screen.fill(blue)
 
-    pos_x += vel_x
-    pos_y += vel_y
-
-    if pos_x > 500 or pos_x < 0:
-        vel_x = -vel_x
-    if pos_y > 400 or pos_y < 0:
-        vel_y = -vel_y
-
+    # pos_x += vel_x
+    # pos_y += vel_y
+    #
+    # if pos_x > 500 or pos_x < 0:
+    #     vel_x = -vel_x
+    # if pos_y > 400 or pos_y < 0:
+    #     vel_y = -vel_y
+    #
     # screen.blit(textImage, (100, 100))
-    pos = pos_x, pos_y, 100, 100
-    pygame.draw.rect(screen, yellow, pos, width)
+    # pos = pos_x, pos_y, 100, 100
+    # pygame.draw.rect(screen, yellow, pos, width)
+    pygame.draw.line(screen, white, (100, 100), (500, 400), width)
 
     pygame.display.update()
