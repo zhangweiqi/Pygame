@@ -7,13 +7,13 @@ import pygame
 from pygame.locals import *
 
 pygame.init()
-screen = pygame.display.set_mode((600, 500))
+screen = pygame.display.set_mode((2000, 1000))
 pygame.display.set_caption("Drawing Rectangles")
 
 myfont = pygame.font.Font(None, 60)
 
 white = 255, 255, 255
-blue = 0, 0, 200
+blue = 0, 0, 255
 yellow = 255, 255, 0
 
 position = 300, 250
